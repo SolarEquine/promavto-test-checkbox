@@ -16,13 +16,17 @@ html, body{
 .checkbox{
     display: flex;
     margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 50px;
+    min-width: 150px;
 }
 
 .hidden_checkbox{
-    display: none;
+    opacity: 0;
 }
 
 .checkbox_label{
+    position: absolute;
     display: flex;
     align-items: center;
 }
@@ -30,8 +34,9 @@ html, body{
 .visible_checkbox{
     display: flex;
     position: relative;
-    width: 50px;
-    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    margin-right: 10px;
     border: 3px solid rgb(53, 53, 160);
     border-radius: 10px;
     background-color: rgb(230, 176, 112);
